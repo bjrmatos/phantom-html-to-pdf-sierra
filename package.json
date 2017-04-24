@@ -10,6 +10,9 @@
   "author": "BJR Matos <bjrmatos@gmail.com> (https://github.com/bjrmatos)",
   "license": "MIT",
   "dependencies": {
+    "net-cluster": "0.0.2",
+    "portscanner": "1.0.0",
+    "underscore": "1.8.2",
     "lodash": "4.13.1",
     "phantom-workers": "0.4.0",
     "uuid": "2.0.2"
