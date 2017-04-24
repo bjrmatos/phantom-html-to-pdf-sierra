@@ -1,0 +1,19 @@
+{
+  "name": "phantom-html-to-pdf-sierra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 7000"
+  },
+  "keywords": [],
+  "author": "BJR Matos <bjrmatos@gmail.com> (https://github.com/bjrmatos)",
+  "license": "MIT",
+  "dependencies": {
+    "phantom-html-to-pdf": "0.5.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "3.2.0"
+  }
+}
