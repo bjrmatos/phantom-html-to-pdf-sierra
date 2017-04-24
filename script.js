@@ -15,7 +15,7 @@ require('webserver').create().listen(host + ':' + port, function (req, res) {
 		//write the result to the response
 		res.statusCode = 200;
 		res.setHeader('Content-Type', 'application/json');
-	  res.write(JSON.stringify({ title: 'test' }));
+	  res.write(JSON.stringify({ title: title }));
 	  res.close();
 	});
 });

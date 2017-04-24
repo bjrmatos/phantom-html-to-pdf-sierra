@@ -41,6 +41,10 @@ describe('phantom-workers-sierra', function() {
       if (err) {
         console.error('Error in test while starting:', err);
 
+        if (err.message.indexOf('if you are using macOS Sierra') !== -1) {
+          return done();
+        }
+
         return done(err);
       }
 
