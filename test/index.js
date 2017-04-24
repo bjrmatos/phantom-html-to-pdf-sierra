@@ -2,7 +2,7 @@
 
 var expect = require('chai').expect;
 
-var htmlToPdf = require('phantom-html-to-pdf')({
+var htmlToPdf = require('../')({
   strategy: 'dedicated-process'
 });
 

@@ -10,7 +10,12 @@
   "author": "BJR Matos <bjrmatos@gmail.com> (https://github.com/bjrmatos)",
   "license": "MIT",
   "dependencies": {
-    "phantom-html-to-pdf": "0.5.0"
+    "lodash": "4.13.1",
+    "phantom-workers": "0.4.0",
+    "uuid": "2.0.2"
+  },
+  "optionalDependencies": {
+    "phantomjs": "1.9.17"
   },
   "devDependencies": {
     "chai": "3.5.0",
