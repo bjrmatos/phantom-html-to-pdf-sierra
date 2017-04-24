@@ -1,7 +1,10 @@
 'use strict';
 
 var expect = require('chai').expect;
-var htmlToPdf = require('phantom-html-to-pdf')();
+
+var htmlToPdf = require('phantom-html-to-pdf')({
+  strategy: 'dedicated-process'
+});
 
 describe('phantom-html-to-pdf-sierra', function() {
   it('should render normally', function(done) {
@@ -9,6 +12,8 @@ describe('phantom-html-to-pdf-sierra', function() {
       if (err) {
         return done(err);
       }
+
+      console.log(pdf.logs)
 
       expect(pdf.logs).to.have.length.of.at.least(1);
       expect(pdf.numberOfPages).to.be.eql(1);
